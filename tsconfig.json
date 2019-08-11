@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true,
+    "target": "es2015",
+    "lib": ["dom", "es2015", "esnext.asynciterable"]
+  }
+}

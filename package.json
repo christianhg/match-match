@@ -1,0 +1,30 @@
+{
+  "name": "match-match",
+  "private": true,
+  "author": "Christian Hamburger Grøngaard <christianhg@gmail.com>",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "dist": "npm run prettier-production && npm run test && parcel build ./src/index.html",
+    "prettier": "prettier --write \"{**/*,*}.{html,md,ts,json,css,yml}\"",
+    "prettier-production": "prettier --list-different \"{**/*,*}.{html,md,ts,json,css,yml}\"",
+    "prettier-staged": "pretty-quick --staged --pattern \"{**/*,*}.{html,md,ts,json,css,yml}\"",
+    "test": "jest",
+    "test-watch": "jest --watchAll"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.1",
+    "@types/ramda": "^0.26.19",
+    "jest": "^24.8.0",
+    "modern-normalize": "^0.5.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "ramda": "^0.26.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  }
+}
